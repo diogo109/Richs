@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+html{
+    
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background-image: url(fog1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+header .container{
+    max-width: 1280px;
+    margin: auto;
+    
+}
+
+header .container .flex{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .flex a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);;
+
+}
+
+
+header{
+    width: 100%;
+    padding: 30px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header i{
+    font-size: 30px;
+    color: white;
+}
+
+header ul{
+    list-style-type: none;
+    
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);;
+}
+
+.container .flex .btn-contacto button{
+    font-size: 20px;
+    border-radius: 5px;
+    width: 110px;
+    height: 40px;
+    border: 0;
+    background-color: rgb( 204, 122, 8);
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 0px 20px rgb(171, 76, 3);
+
+}
+
+
+.container .flex .btn-contacto a button{
+    text-shadow: 0 20px 20px rgba(0, 0, 0, 0.3) ;
+}
+
+
+section.banner{
+    height: 100vh;
+    
+
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    
+    flex-direction: column;
+    color: white;
+    font-size: 50px;
+    text-align: left;
+
+    
+}
+section.banner .text{
+    margin-left: 200px;
+    
+}
+section.banner .text .btn-hire button{
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 60px;
+    width: 150px;
+    height: 50px;
+    border: 0;
+    background-color: rgb( 204, 122, 8);
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 0px 20px rgb(171, 76, 3);
+}
+
+section.banner .btn-down {
+    position: absolute;
+    bottom: 40px;
+    left: 50%; /* Centraliza na horizontal */
+    transform: translateX(-50%); /* Move para a esquerda em 50% da largura */
+    text-align: center; /* Centraliza o conteúdo interno na horizontal */
+}
+
+
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+section.banner .btn-down button {
+    
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-size: 60px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: float 2s ease-in-out infinite;
+
+}
+section.banner .btn-down button a{
+    color: white;
+}
+section.banner .text .titulo-aux{
+    margin-bottom: 25px;
+}
+section.banner .text p{
+    font-size: 25px;
+}
+section.banner .text h1{
+    font-weight: 500;
+    margin-left: -5px;
+}
+section.banner .text p span{
+    font-size: 15px;
+}
+
+section.banner h1 span{
+    background: rgb(204, 122, 8);
+    text-shadow: 0 0px 15px rgba(0, 0,0, 0.1);
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+
+section.phrase{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-style: italic;
+    
+    color: white;
+    
+   
+
+
+}
+
+
+.container-about {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    /* Cor de fundo (opcional) */
+}
+
+.container-about .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    
+
+}
+
+.container-about img {
+    border-radius: 50%;
+
+    height: 400px;
+    margin-right: 40px;
+}
+
+.container-about .info {
+    text-align: left;
+     /* Ajuste a margem conforme necessário para controlar a distância entre a imagem e o texto */
+}
+
+.container-about h1 {
+    font-size: 50px;
+    font-style: italic;
+    color: white;
+
+    font-weight: 500;
+    padding: 10px 0 ; 
+}
+
+.container-about .social{
+    font-size: 35px;
+    margin-bottom: -10px;
+}
+
+.container-about .social a{
+    color: white;
+    text-decoration: none;
+}
+
+.container-about .musicas-info p {
+    color: rgb( 204, 122, 8);;
+    margin-bottom: 70px;
+}
+
+.container-about .container-h2 h2 {
+    color: white;
+    font-weight: 300;
+    
+    
+    
+    width: 70%;
+}
+
+/* Outras regras CSS aqui */
+
+
+
+
+
+section.projects{
+    
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+section.projects .card{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinhar os cards horizontalmente no centro */
+    height: 100%;
+    width: 95%;
+    gap: 75px;
+    padding: 0 75px;
+    
+}
+
+
+
+section.projects .card .card1{
+    color: white;
+    height: 500px;
+
+    flex: 1;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow:  0 25px 45px rgba(0, 0, 0, 0.1) ;
+}
+
+
+section.projects .playing-part{
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+section.projects .playing-part .img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow:  0.1px 4px 8px 2px rgba(0, 0, 0 ,0.1);
+}
+
+section.projects .playing-part .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+section.projects .control-part{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.projects .control-part .song-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.projects .control-part .song-title p{
+    font-size: 14px;
+}
+
+section.projects .control-part .song-title p:first-child{
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+
+section.projects .control-part .control-buttons{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+section.projects .control-part .control-buttons .main-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+
+}
+
+section.projects .control-part .control-buttons .main-btns button{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0 18px;
+    background: rgba(0,0,0,0.50);
+    box-shadow: 0.1px 8px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+
+section.projects .control-part .control-buttons .main-btns #play_btn{
+    background:  linear-gradient(to right, #048334, #035422);
+}
+
+
+section.projects .control-part .control-buttons .range-slider{
+    width: 60%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    
+}
+
+section.projects .control-part .control-buttons .range-slider p{
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+
+
+
+section.projects .control-part #slider1, #slider2, #slider3{
+    outline: none;
+    width: 85%;
+    height: 4px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 3px;
+    
+}
+
+
+
+
+footer{
+    position: relative;
+    bottom: 0;
+    padding-top: 30px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    height: auto;
+    width: 100%;
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+
+}
+
+footer .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+}
+
+footer .socials li{
+    margin:  0 10px;
+    
+}
+
+footer .socials a{
+    text-decoration: none;
+    color: white;
+
+}
+
+footer .socials a i{
+    font-size: 25px;
+    transition: color .2s ease;
+}
+
+footer .socials a:hover i{
+    color: rgb(204, 122, 8);;
+}
+
+.footer-bottom{
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    color: white;
+    font-size: 13px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
